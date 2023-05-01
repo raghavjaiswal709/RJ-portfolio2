@@ -222,7 +222,7 @@ nav ul{
 }
 
         #logo{ margin-left: 20px;
-            margin-top: 70px;
+            margin-top: 25px;
             color: #045F5F;
             font-weight: bold;
             font-family: 'Lobster Two', cursive;
@@ -242,7 +242,7 @@ nav ul{
     border-radius: 50%;
     border: 16px solid rgb(179, 212, 191);
     padding: 0px;
-    margin-top: 320px;
+    margin-top: 520px;
 
 }
 
@@ -289,7 +289,7 @@ nav ul{
     #drop{
         display: flex;
         justify-content: right;
-        margin-top: 70px;
+        margin-top: 25px;
     }
 
 
@@ -477,65 +477,8 @@ nav ul{
     <ul>
 
 </html>
-<a href="#_" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-indigo-600 transition duration-300 ease-out border-2 border-purple-500 rounded-full shadow-md group">
-    <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-purple-500 group-hover:translate-x-0 ease">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
-    </span>
-    <span class="absolute flex items-center justify-center w-full h-full text-purple-500 transition-all duration-300 transform group-hover:translate-x-full ease">Button Text</span>
-    <span class="relative invisible">Button Text</span>
-    </a>
 
 
 
 
-
-    <div id="app">
-        <div class="flex flex-wrap px-5">
-            <vue-dropdown animation="slide-in-up" color="green"></vue-dropdown>
-        </div>
-    </div>
-
-
-
-    <script>
-        Vue.component('vue-dropdown', {
-          data: function() {
-            return{
-              show: false,
-              cars: [
-                'BMW',
-                'Mercedes',
-                'Audi',
-                'Volvo',
-              ]
-            }
-          },
-          props: {
-            color: String,
-            animation: String
-          },
-          template: `
-            <div class="dropdown-wrapper relative m-8">
-            <button v-on:click="show = !show" :class="'bg-'+color+'-500'" class="text-white font-bold py-2 px-4 whitespace-no-wrap rounded transition duration-300">Dropdown <i class="fas fa-chevron-down ml-2"></i></button>
-            <transition :name="animation">
-              <div :class="'bg-'+color+'-500'" class="dropdown-menu text-white mt-1 rounded absolute z-10 shadow-lg w-40 max-w-xs" v-if="show">
-                <ul class="list-none overflow-hidden rounded">
-                  <li v-for="car in cars">
-                    <a href="" class="flex py-2 px-4 transition duration-300" :class="'theme-'+color">{{car}}</a>
-                  </li>
-                </ul>
-              </div>
-            </transition>
-          </div>
-          `
-        })
-        
-        const app = new Vue({
-          el: '#app',
-        });
-        </script>
-
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-
-
+    
